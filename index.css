@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  touch-action: manipulation;
+}
+
+:root {
+  --bg: #1a1a1a;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Segoe UI", Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+main {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  min-height: 100vh;  
+}
+
+img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
