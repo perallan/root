@@ -1,46 +1,586 @@
-<!DOCTYPE html>
-<html lang="no">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Per Allan Johansson</title>
-    <meta property="og:site_name" content="Per Allan Johansson">
-    <meta property="og:locale" content="nb_NO">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#BCFBDE">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#002A2A">
-    <meta property="og:image" content="https://webadvice.no/img/share.jpg">
-    <meta property="og:image:alt" content="Bilde av meg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="description" content="Hjemmesiden til Per Allan Johansson">
-    <meta property="og:description" content="Hjemmesiden til Per Allan Johansson">
-    <meta property="og:title" content="Per Allan Johansson">
-    <meta property="og:url" content="https://webadvice.no/">
-    <meta name="author" content="Per Allan Johansson">
-    <link rel="canonical" href="https://webadvice.no/">
-    <link rel="stylesheet" href="index.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1134961-13"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-      gtag('config', 'UA-1134961-13');
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Per Allan Johansson",
-      "url": "https://webadvice.no/cv",
-      "jobTitle": "Senior Frontend Developer",
-      "sameAs": [
-        "https://www.linkedin.com/in/perallan/"
-      ],
-      "email": "mailto:perallan@gmail.com"
-    }
-    </script>
-  </head>
-  <body><main><img src="img/me.png" alt="Bilde av Per Allan Johansson"></main></body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-438C1VW0TM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-438C1VW0TM');
+  </script>
+
+  <title>Per Allan Johansson — alltid i bevegelse | webadvice.no</title>
+  <meta
+    name="description"
+    content="Per Allan Johansson — frontend, idéer, sykling, musikk og steder. En personlig side om teknologi, mennesker, fart, flyt og ting som faktisk smeller litt."
+  >
+
+  <meta name="author" content="Per Allan Johansson">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#ffd600">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="canonical" href="https://webadvice.no/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="webadvice.no">
+  <meta property="og:title" content="Per Allan Johansson — alltid i bevegelse">
+  <meta
+    property="og:description"
+    content="Frontend, idéer, sykling, musikk og steder. Teknologi, mennesker, fart, flyt og ting som faktisk smeller litt."
+  >
+  <meta property="og:url" content="https://webadvice.no/">
+  <meta property="og:image" content="https://webadvice.no/share.png">
+  <meta property="og:image:secure_url" content="https://webadvice.no/share.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="webadvice.no — Per Allan Johansson, alltid i bevegelse">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f51d2e">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Per Allan Johansson — alltid i bevegelse">
+  <meta
+    name="twitter:description"
+    content="Frontend, idéer, sykling, musikk og steder. Teknologi, mennesker, fart, flyt og ting som faktisk smeller litt."
+  >
+  <meta name="twitter:image" content="https://webadvice.no/share.png">
+  <meta name="twitter:image:alt" content="webadvice.no — Per Allan Johansson, alltid i bevegelse">
+
+  <!-- Small quality-of-life metadata -->
+  <meta name="application-name" content="webadvice.no">
+  <meta name="apple-mobile-web-app-title" content="webadvice.no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#hjem" aria-label="Til toppen">
+      webadvice<span>.no</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Hovednavigasjon">
+      <a class="nav-home" href="#hjem">Hjem</a>
+      <a href="#sykling">Sykling</a>
+      <a href="#teknologi">Teknologi</a>
+      <a href="#musikk">Musikk</a>
+      <a href="#steder">Steder</a>
+      <a href="#om">Om</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="panel hero hero-v2" id="hjem">
+      <div class="hero-yellow" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Per Allan Johansson</p>
+
+        <h1>
+          <span class="hero-line hero-line-black">Alltid i</span>
+          <span class="hero-line hero-line-red">bevegelse.</span>
+        </h1>
+
+        <p class="intro">
+          Frontend, idéer, sykling og skaperkraft.
+          Jeg liker fart, flyt og ting som faktisk smeller litt.
+        </p>
+
+        <div class="hero-tags" aria-label="Noen av tingene jeg liker">
+          <a href="#sykling">Landevei</a>
+          <a href="#sykling">Gravel</a>
+          <a href="#sykling">Brostein</a>
+          <a href="#steder">Manglerud</a>
+          <a href="#steder">Østmarka</a>
+          <a href="#steder">Belgia</a>
+          <a href="#steder">Spania</a>
+          <a href="#musikk">Depeche Mode</a>
+        </div>
+
+        <a class="hero-cta" href="#sykling">
+          <span>Utforsk videre</span>
+          <i aria-hidden="true">→</i>
+        </a>
+      </div>
+
+      <div class="portrait-stage">
+        <span class="portrait-orbit portrait-orbit-a" aria-hidden="true"></span>
+        <span class="portrait-orbit portrait-orbit-b" aria-hidden="true"></span>
+        <span class="portrait-orbit-label" aria-hidden="true">ALLTID · I · BEVEGELSE ·</span>
+
+        <figure class="portrait portrait-v2">
+          <img src="img/portrait.jpg" alt="Per Allan Johansson">
+        </figure>
+      </div>
+
+      <figure class="hero-photo hero-photo-v2">
+        <img
+          src="img/roubaix-2026.jpg"
+          alt="Per Allan sykler Paris-Roubaix Cyclo 2026 på brostein i Nord-Frankrike"
+        >
+      </figure>
+
+      <div class="hero-sticker">
+        <span>Paris-Roubaix</span>
+        <span>Cyclo 2026</span>
+      </div>
+
+      <p class="scribble scribble-one">Ikke helt<br>som alle andre.<br>Heldigvis.</p>
+      <p class="scribble scribble-two">Knekkere,<br>brostein og<br>store smil.</p>
+
+      <div class="hero-scratch hero-scratch-a" aria-hidden="true"></div>
+      <div class="hero-scratch hero-scratch-b" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- CYCLING -->
+    <section class="panel cycling cycling-v3" id="sykling">
+      <div class="cycling-hero-v3">
+        <figure class="cycling-hero-photo">
+          <img src="img/cycling-hero-spain.jpg" alt="Per Allan leder en sykkelgruppe opp en solrik stigning i Spania">
+        </figure>
+
+        <div class="cycling-hero-shade" aria-hidden="true"></div>
+
+        <div class="cycling-hero-copy">
+          <p class="section-number">01 / Sykling</p>
+          <h2>Flere veier.<br><span>Samme glede.</span></h2>
+          <p class="cycling-lead">
+            Landevei, gravel, brostein og korte knekkere.
+            Fart er fint. Flyt er bedre. Menneskene er best.
+          </p>
+
+          <div class="cycling-stats" aria-label="Ting jeg liker ved sykling">
+            <span><b>KOM</b><small>jakt</small></span>
+            <span><b>1 min</b><small>full gass</small></span>
+            <span><b>Frøy</b><small>fellesskap</small></span>
+            <span><b>NTC</b><small>13 uker i Spania</small></span>
+          </div>
+        </div>
+
+        <p class="cycling-hero-note">Ikke kilometer.<br><strong>Minner.</strong></p>
+      </div>
+
+      <div class="cycling-story">
+        <header class="cycling-story-intro">
+          <p class="cycling-story-kicker">Fra Manglerud til fjellpass</p>
+          <h3>Det er dette<br>jeg husker.</h3>
+          <p>
+            Ikke bare tallene på Garmin. Folkene, pausene, veiene,
+            støvet, kaffen og de dagene man helst ikke vil at skal ta slutt.
+          </p>
+        </header>
+
+        <div class="cycling-mosaic">
+          <figure class="cycling-memory memory-wide memory-spain">
+            <img src="img/cycling-spain-vista.jpg" alt="Syklister stopper ved autovernet og ser utover fjellene i Spania">
+            <figcaption><b>NTC.</b><span>13 uker i Spania. Varme veier. Store horisonter.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-tall memory-coffee">
+            <img src="img/cycling-suvi-coffee.jpg" alt="Per Allan og Suvi tar en kaffepause ved et bord i skogen">
+            <figcaption><b>Kaffestopp.</b><span>Noen pauser betyr mer enn watt.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-furka">
+            <img src="img/cycling-furkapass.jpg" alt="Per Allan med sykkel på Furkapass i Sveits">
+            <figcaption><b>2436 m.</b><span>Furkapass.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-lacabra">
+            <img src="img/cycling-lacabra.jpg" alt="Ole kommer med et brett øl etter den lange klatringen opp La Cabra i Spania">
+            <figcaption><b>Etter La Cabra.</b><span>Ole hentet øl. Resten ordnet seg selv.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-wide memory-froy">
+            <img src="img/cycling-froy-medals.jpg" alt="En stor gruppe syklister fra IF Frøy med medaljer etter ritt">
+            <figcaption><b>Frøy.</b><span>Fellesskap slår solotur. Nesten alltid.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-tall memory-canillas">
+            <img src="img/cycling-canillas.jpg" alt="Per Allan og Allan sykler sammen på en solrik fjellvei mot Canillas i Spania">
+            <figcaption><b>Canillas.</b><span>Allan og meg på vei opp. Morten bak kamera.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-wide memory-comares">
+            <img src="img/cycling-comares.jpg" alt="NTC-syklister på den bratte bakveien opp mot Comares i Andalucía">
+            <figcaption><b>Comares.</b><span>Bakveien opp. Bratt nok til å gjøre utsikten fortjent.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-gravel">
+            <img src="img/cycling-gravel.jpg" alt="Syklister på grusvei gjennom åpent landskap">
+            <figcaption><b>Gravel.</b><span>Mer støv. Mindre dill.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-tall memory-clt">
+            <img src="img/cycling-clt.jpg" alt="Et morsomt tilfeldig møte før start på CLT">
+            <figcaption><b>Før start.</b><span>Et tilfeldig møte. Fullstendig kaos. Fortsatt en historie vi ler av.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-oslo">
+            <img src="img/cycling-froy-oslo.jpg" alt="IF Frøy-syklister samlet utenfor Olsen i Oslo">
+            <figcaption><b>Hjemmebane.</b><span>Oslo. Frøy. Folk jeg liker.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-lygna">
+            <img src="img/cycling-lygna.jpg" alt="Per Allan sykler Lygna Opp alene opp en grusbakke">
+            <figcaption><b>Lygna Opp.</b><span>Dårlig humør. Gode bein. 300+ watt og en dag som snudde.</span></figcaption>
+          </figure>
+
+          <figure class="cycling-memory memory-square memory-mud">
+            <img src="img/cycling-mud.jpg" alt="Sølete sykkelbein og sko etter en våt grustur">
+            <figcaption><b>Realiteten.</b><span>Ikke alle dager ser ut som et postkort.</span></figcaption>
+          </figure>
+        </div>
+
+        <p class="cycling-story-outro">
+          Noen turer husker man <span>lenger enn tallene.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="panel tech tech-v3" id="teknologi">
+      <div class="tech-v3-grid">
+        <div class="tech-v3-title">
+          <p class="section-number">02 / Teknologi</p>
+
+          <h2 class="tech-v3-headline">
+            <span class="tech-v3-headline__line">Nysgjerrig</span>
+            <span class="tech-v3-headline__line">nok til å</span>
+            <span class="tech-v3-headline__line tech-v3-headline__line--blue">prøve.</span>
+          </h2>
+
+          <p class="tech-v3-lead">
+            Jeg bryr meg mindre om hvilket rammeverk som brukes enn om
+            hva vi klarer å skape med det. Gode opplevelser, moderne
+            løsninger og tjenester som føles enkle selv når det ligger
+            mye arbeid bak.
+          </p>
+        </div>
+
+        <div class="tech-console" aria-label="Ting jeg utforsker akkurat nå">
+          <div class="tech-console__top">
+            <span class="tech-console__path">~/webadvice</span>
+            <span class="tech-console__status">LIVE / EXPERIMENT</span>
+          </div>
+
+          <div class="tech-console__body">
+            <p><span>01</span> modern web</p>
+            <p><span>02</span> experimental css</p>
+            <p><span>03</span> ai-native workflows</p>
+            <p><span>04</span> prompting</p>
+            <p><span>05</span> prototyping</p>
+            <p><span>06</span> product thinking</p>
+          </div>
+
+          <p class="tech-console__footer">
+            Bruk nye verktøy når de gjør oss bedre.<br>
+            Fjern lag når de bare står i veien.
+          </p>
+        </div>
+
+        <article class="tech-thesis">
+          <p class="eyebrow">Opplevelse først</p>
+          <h3>Det skal føles enkelt.</h3>
+          <p>
+            Jeg liker teknologi best når den forsvinner litt. Når løsningen
+            kjennes naturlig, tydelig og rask — selv om det ligger mye arbeid,
+            mange valg og en god del stahet bak.
+          </p>
+        </article>
+
+        <blockquote class="tech-bridge">
+          <span>Samme drivkraft.</span>
+          Den samme nysgjerrigheten som får meg til å teste en ny
+          browser-funksjon, får meg også til å finne en bakvei opp til
+          en landsby i Andalucía.
+        </blockquote>
+
+        <div class="tech-principles" aria-label="Hvordan jeg liker å jobbe">
+          <article>
+            <b>Bygg nytt.</b>
+            <span>Jeg trives best når noe ikke finnes ennå.</span>
+          </article>
+          <article>
+            <b>Press grensene.</b>
+            <span>Se hvor langt idéen, browseren og verktøyene faktisk kan tas.</span>
+          </article>
+          <article>
+            <b>Finn flyt.</b>
+            <span>Fjern friksjon. Behold energien. Gjør det lettere å komme videre.</span>
+          </article>
+        </div>
+
+        <div class="tech-resonance tech-resonance-v3" aria-label="Ord som betyr noe">
+          <div class="resonance-card resonance-card--resonans">
+            <span class="resonance-word">resonans</span>
+            <span class="resonance-meta">nysgjerrighet</span>
+          </div>
+
+          <div class="resonance-card resonance-card--energi">
+            <span class="resonance-word">energi</span>
+            <span class="resonance-meta">motivasjon</span>
+          </div>
+
+          <div class="resonance-card resonance-card--lidenskap">
+            <span class="resonance-word">lidenskap</span>
+            <span class="resonance-meta">nerve</span>
+          </div>
+
+          <div class="resonance-card resonance-card--innsats">
+            <span class="resonance-word">innsats</span>
+          </div>
+
+          <div class="resonance-card resonance-card--vilje">
+            <span class="resonance-word">vilje</span>
+          </div>
+
+          <div class="resonance-card resonance-card--inspirasjon">
+            <span class="resonance-word">inspirasjon</span>
+            <span class="resonance-meta">skaperkraft</span>
+          </div>
+
+          <span class="resonance-flyt">flyt</span>
+        </div>
+
+        <div class="tech-v3-close tech-v3-close-v2">
+          <p class="tech-v3-close__kicker">Resonans / 01</p>
+          <p class="tech-v3-close__lead">
+            Jeg lar meg <span>lett inspirere.</span>
+          </p>
+          <p class="tech-v3-close__body">
+            Av mennesker, musikk, steder, ideer og ting som er laget med nerve.
+            Når den energien setter i gang noe nytt — hos meg eller hos andre —
+            er det da det virkelig skjer noe.
+          </p>
+        </div>
+
+        <p class="tech-v3-scribble">BYGG.<br>TEST.<br>FINN FLYT.</p>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="panel music music-v2" id="musikk">
+      <div class="music-grain" aria-hidden="true"></div>
+
+      <div class="music-hero">
+        <div class="music-copy">
+          <p class="section-number">03 / Musikk</p>
+
+          <h2 class="music-statement">
+            <span class="music-statement-white">Enjoy</span>
+            <span class="music-statement-yellow">the Silence<span class="music-dot">.</span></span>
+          </h2>
+
+          <p class="music-counter">Men ikke alltid.</p>
+
+          <p class="music-note">
+            Musikk har alltid vært mer enn lyd for meg.
+            Det er minner, mennesker, konserter, stemning og øyeblikk som blir værende.
+            Fra mørke klubber til store festivaler – god musikk gjør livet større.
+          </p>
+
+          <div class="music-pills" aria-label="Musikk jeg stadig vender tilbake til">
+            <a href="#dm-memory">Depeche Mode</a>
+            <a href="#cure-memory">The Cure</a>
+            <a href="#omd-memory">OMD</a>
+            <a href="#music-grid">Festivaler</a>
+            <a href="#music-grid">Live</a>
+          </div>
+        </div>
+
+        <figure class="dm-stage">
+          <img
+            src="img/dm-telenor-original.jpg"
+            alt="Depeche Mode-konsert med minnebilde av Andrew Fletcher på sceneskjermene"
+          >
+          <figcaption>
+            <strong>Andrew Fletcher</strong>
+            <span>Et vakkert øyeblikk. Et varig minne.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="festival-polaroid">
+          <img
+            src="img/suvi-per-festival-original.jpeg"
+            alt="Per Allan og Suvi sammen på festival"
+          >
+          <figcaption>Sammen om det som betyr noe ♥</figcaption>
+        </figure>
+
+        <p class="music-handwritten">
+          God musikk.<br>
+          Bedre mennesker.
+        </p>
+
+        <p class="music-side-note">
+          Konserter<br>
+          Festivaler<br>
+          Gode venner<br>
+          Evige minner
+        </p>
+      </div>
+
+      <div class="music-grid" id="music-grid">
+        <figure class="music-card cover-card" id="dm-memory">
+          <img
+            src="img/violator-original.png"
+            alt="Depeche Mode – Violator"
+          >
+        </figure>
+
+        <figure class="music-card photo-card mats-card">
+          <img
+            src="img/mats-per-original.jpg"
+            alt="Per Allan og Mats på konsert"
+          >
+          <figcaption class="mats-caption">Mats <span aria-hidden="true">♥</span></figcaption>
+        </figure>
+
+        <figure class="music-card photo-card cure-card" id="cure-memory">
+          <img
+            src="img/the-cure-original.jpg"
+            alt="The Cure live i Oslo"
+          >
+          <figcaption>The Cure. Ufattelig bra.</figcaption>
+        </figure>
+
+        <figure class="music-card photo-card omd-card" id="omd-memory">
+          <img
+            src="img/omd-original.jpg"
+            alt="OMD live på scenen"
+          >
+          <figcaption>OMD · live</figcaption>
+        </figure>
+      </div>
+
+      <p class="music-footer-line">
+        musikk · mennesker · minner · et bedre liv
+      </p>
+    </section>
+
+    <!-- PLACES -->
+    <section class="panel places places-v2" id="steder">
+      <div class="places-hero">
+        <img
+          class="places-hero__image"
+          src="img/place-hero.png"
+          alt=""
+          aria-hidden="true"
+        >
+        <div class="places-hero__shade" aria-hidden="true"></div>
+
+        <div class="places-hero__copy">
+          <p class="section-number">04 / Steder</p>
+          <h2>Mellom by<br>og <span>skog.</span></h2>
+
+          <p class="places-intro">
+            Fire steder. Ett liv i bevegelse.<br>
+            Fra hjemlige stier til sagnomsuste stigninger.
+          </p>
+        </div>
+
+        <p class="places-hero__quote">
+          Samme nysgjerrighet.<br>
+          Ulike horisonter.
+        </p>
+      </div>
+
+      <div class="places-cards" aria-label="Steder som betyr noe">
+        <article class="place-photo-card" aria-label="Manglerud">
+          <img src="img/place-manglerud.jpg" alt="Østensjøvannet ved Manglerud på vinteren">
+          <span class="place-photo-card__shade" aria-hidden="true"></span>
+          <span class="place-photo-card__meta">59.90° N</span>
+          <span class="place-photo-card__body">
+            <strong>Manglerud</strong>
+            <span>Hjemme. Ro, natur og hverdagsmagi.</span>
+          </span>
+          <span class="place-photo-card__index">01 →</span>
+        </article>
+
+        <article class="place-photo-card" aria-label="Østmarka">
+          <img src="img/place-ostmarka.png" alt="Skog og landskap i Østmarka">
+          <span class="place-photo-card__shade" aria-hidden="true"></span>
+          <span class="place-photo-card__meta">ØST</span>
+          <span class="place-photo-card__body">
+            <strong>Østmarka</strong>
+            <span>Grus, skog og stille kilometer.</span>
+          </span>
+          <span class="place-photo-card__index">02 →</span>
+        </article>
+
+        <article class="place-photo-card" aria-label="Belgia">
+          <img src="img/place-belgia.jpg" alt="Koppenberg i Belgia, fotografert av Per Allan">
+          <span class="place-photo-card__shade" aria-hidden="true"></span>
+          <span class="place-photo-card__meta">KLASSIKERNE</span>
+          <span class="place-photo-card__body">
+            <strong>Belgia</strong>
+            <span>Brostein, kultur og sykkelhistorie.</span>
+          </span>
+          <span class="place-photo-card__index">03 →</span>
+        </article>
+
+        <article class="place-photo-card" aria-label="Spania">
+          <img src="img/place-cerro-gordo.png" alt="Cerro Gordo ved Middelhavet">
+          <span class="place-photo-card__shade" aria-hidden="true"></span>
+          <span class="place-photo-card__meta">SØR</span>
+          <span class="place-photo-card__body">
+            <strong>Spania</strong>
+            <span>Cerro Gordo. Sol, stigninger og utsikt.</span>
+          </span>
+          <span class="place-photo-card__index">04 →</span>
+        </article>
+      </div>
+
+      <p class="place-manifest">
+        Samme menneske.<br>
+        Forskjellige veier.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="panel about" id="om">
+      <div class="about-main">
+        <p class="section-number">05 / Per Allan</p>
+        <h2>Ikke helt<br>som alle andre.<br><span>Heldigvis.</span></h2>
+
+        <p>
+          Jeg liker mennesker med energi, tydelige ideer, godt håndverk
+          og ting som beveger seg fremover. På jobb, på sykkel og ellers.
+        </p>
+      </div>
+
+      <div class="about-links">
+        <p>Finn meg</p>
+        <a href="https://www.linkedin.com/in/perallan/">LinkedIn ↗</a>
+        <a href="mailto:perallan@gmail.com">E-post ↗</a>
+      </div>
+
+      <footer>
+        <strong>webadvice.no</strong>
+        <span>Manglerud · Oslo</span>
+        <span>1971 → fortsatt i bevegelse</span>
+      </footer>
+    </section>
+  </main>
+</body>
 </html>
